@@ -1,12 +1,17 @@
+﻿using UnityEngine;
 using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
 
-public class Mover : MonoBehaviour {
-    private Rigidbody rb;
-    public float speed;
+public class Mover : MonoBehaviour
+{
+	public float speed;
+	public bool isLeft;
+	private Rigidbody rigidbody;
+	private Transform transform;
 
-    void Start()
-    {
-    }
+	void Start ()
+	{
+		rigidbody = GetComponent<Rigidbody>();
+		transform = GetComponent<Transform> ();
+		rigidbody.velocity = isLeft ? -transform.right * speed : transform.right * speed;
+	}
 }
