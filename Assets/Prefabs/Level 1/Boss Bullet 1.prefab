@@ -27,7 +27,7 @@ GameObject:
   - component: {fileID: 212865655179856434}
   m_Layer: 0
   m_Name: Boss Bullet 1
-  m_TagString: Enemy
+  m_TagString: Bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -128,7 +128,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   frequency: 4
-  item: {fileID: 1114717310588044, guid: 6f4b11387eef64118be94841eb726e72, type: 2}
+  item: {fileID: 1795451618565158, guid: 7e084f62e0aca48f9b0f361887128e51, type: 2}
 --- !u!135 &135107527162156372
 SphereCollider:
   m_ObjectHideFlags: 1
