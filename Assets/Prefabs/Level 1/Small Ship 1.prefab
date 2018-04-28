@@ -101,7 +101,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 1
-  isLeft: 1
+  direction: left
 --- !u!114 &114429517073383178
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -116,7 +116,9 @@ MonoBehaviour:
   shot: {fileID: 1294360445382360, guid: ebc6d3ac403ae4d7fbfa9fd721f7d63f, type: 2}
   shotSpawn: {fileID: 4799841721774776}
   fireRate: 2
-  delay: 1
+  initialDelay: 0
+  pauseTime: 0
+  numShots: 0
 --- !u!114 &114527155929221248
 MonoBehaviour:
   m_ObjectHideFlags: 1
