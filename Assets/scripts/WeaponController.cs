@@ -14,14 +14,22 @@ public class WeaponController : MonoBehaviour
 	void Start ()
 	{
 		if (numShots > 0) {
-			FireShots ();
+			StartCoroutine("FireShots");
+
 		} else {
 			InvokeRepeating ("Fire", initialDelay, fireRate);
 		}
 	}
 
-	void FireShots() 
+	IEnumerator FireShots() 
 	{
+		while (true) {
+			for (int i = 0; i < numShots; i++) {
+				Fire ();
+				yield return new WaitForSeconds (fireRate);
+			}
+			yield return new WaitForSeconds (pauseTime);
+		}
 	}
 
 	void Fire ()
