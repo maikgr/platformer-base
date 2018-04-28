@@ -155,16 +155,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be10db916c36048bf8fc298583e19c20, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 3
+  speed: 15
   tilt: 2
   boundary:
-    xMin: 0
-    xMax: 15
-    yMin: -5
-    yMax: 5
+    xMin: -16
+    xMax: 16
+    yMin: -9
+    yMax: 9
   shot: {fileID: 1114717310588044, guid: 6f4b11387eef64118be94841eb726e72, type: 2}
-  shotSpawn: {fileID: 4431675374378132}
-  fireRate: 0.25
+  shotSpawn: {fileID: 4358472824305970}
+  fireRate: 0.1
 --- !u!212 &212151757866039950
 SpriteRenderer:
   m_ObjectHideFlags: 1

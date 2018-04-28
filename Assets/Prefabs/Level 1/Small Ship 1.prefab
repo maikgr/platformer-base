@@ -100,7 +100,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d5f785e7fa18ef40a080fa344271b04, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1
+  speed: 7
   isLeft: 1
 --- !u!114 &114429517073383178
 MonoBehaviour:
@@ -116,7 +116,9 @@ MonoBehaviour:
   shot: {fileID: 1294360445382360, guid: ebc6d3ac403ae4d7fbfa9fd721f7d63f, type: 2}
   shotSpawn: {fileID: 4799841721774776}
   fireRate: 2
-  delay: 1
+  initialDelay: 0
+  pauseTime: 0
+  numShots: 0
 --- !u!114 &114527155929221248
 MonoBehaviour:
   m_ObjectHideFlags: 1
