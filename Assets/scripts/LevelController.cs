@@ -21,6 +21,9 @@ public class LevelController : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		timeCountdown = timeToNextWave[currentWave];
+		Event.StartListening (Event.GameEvent.BossDead, OnBossDie);
+		Event.StartListening (Event.GameEvent.PlayerDead, OnPlayerDie);
+
 	}
 	
 	// Update is called once per frame
@@ -43,5 +46,13 @@ public class LevelController : MonoBehaviour {
 
 		state = SpawnState.WAITING;
 		yield break;
+	}
+
+	void OnBossDie() {
+		Debug.Log ("Boss dead");
+	}
+
+	void OnPlayerDie() {
+		Debug.Log ("Player dead");
 	}
 }

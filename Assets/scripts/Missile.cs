@@ -20,6 +20,7 @@ public class Missile : MonoBehaviour
 	void Update () 
 	{
 		direction =	target.position - transform.position;
+		direction.Normalize ();
 		transform.position += direction * speed * Time.deltaTime;
 	}
 
