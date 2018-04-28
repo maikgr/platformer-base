@@ -9,6 +9,7 @@ public class LevelController : MonoBehaviour {
 		SPAWNING, WAITING, COUNTING 
 	};
 
+    public Vector2 spawnPoint;
 	public float[] timeToNextWave;
 	public GameObject[] enemyWave; //prefabs
 
@@ -38,7 +39,7 @@ public class LevelController : MonoBehaviour {
 	IEnumerator SpawnWave(GameObject enemy) {
 		state = SpawnState.SPAWNING;
 
-		Instantiate(enemy, new Vector3(16, 0, 0), Quaternion.identity);
+		Instantiate(enemy, spawnPoint, Quaternion.identity);
 
 		state = SpawnState.WAITING;
 		yield break;
