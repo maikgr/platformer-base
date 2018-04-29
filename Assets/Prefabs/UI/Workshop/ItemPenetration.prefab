@@ -23,6 +23,7 @@ GameObject:
   - component: {fileID: 114774930695403194}
   - component: {fileID: 225316359059511488}
   - component: {fileID: 114603192254103672}
+  - component: {fileID: 114712396921004092}
   m_Layer: 5
   m_Name: ItemPenetration
   m_TagString: Item Drop
@@ -85,6 +86,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 73033b90e5cff4b429ce9b34876f0486, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &114712396921004092
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1729969314578028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 500b9cac1b5a1824a8b4aeab1cc21f3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemName: 4
 --- !u!114 &114774930695403194
 MonoBehaviour:
   m_ObjectHideFlags: 1

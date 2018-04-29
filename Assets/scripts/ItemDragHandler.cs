@@ -2,34 +2,65 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
 public class ItemDragHandler : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler {
 
     public static GameObject heldItem;
 
-    private Vector3 startPosition;
-    private Transform startParent;
     private Transform canvas;
+    private Transform startParent;
 
     public void OnBeginDrag(PointerEventData eventData) {
-        heldItem = gameObject;
-        startPosition = transform.position;
-        startParent = transform.parent;
         canvas = GameObject.FindGameObjectWithTag("UICanvas").transform;
-        GetComponent<CanvasGroup>().blocksRaycasts = false;
-        transform.SetParent(canvas);
+        startParent = transform.parent;
+        Text quantityText = startParent.GetComponentInChildren<Text>();
+
+        if (quantityText != null && GetQuantity() > 1) {
+            AddQuantity(-1);
+            heldItem = Instantiate(gameObject, canvas);
+        } else if(quantityText != null && GetQuantity() == 1 ) {
+            AddQuantity(-1);
+            heldItem = gameObject;
+            gameObject.transform.SetParent(canvas);
+        } else {
+            heldItem = gameObject;
+            gameObject.transform.SetParent(canvas);
+        }
+
+        heldItem.GetComponent<CanvasGroup>().blocksRaycasts = false;
     }
 
     public void OnDrag(PointerEventData eventData) {
-        transform.position = Input.mousePosition;
+        heldItem.transform.position = Input.mousePosition;
     }
 
-    public void OnEndDrag(PointerEventData eventData) {
-        heldItem = null;
-        GetComponent<CanvasGroup>().blocksRaycasts = true;
-        if(transform.parent == canvas) {
-            transform.position = startPosition;
-            transform.parent = startParent;
-        }        
-    }    
+    public void OnEndDrag(PointerEventData eventData) {        
+        if(heldItem.transform.parent == canvas) {
+            GameObject panel = GameObject.FindGameObjectWithTag("InventoryPanel");
+            panel.GetComponent<ItemWorkshopPanel>().PutIntoWorkshopInventory();
+        } else {
+            heldItem.transform.GetComponent<CanvasGroup>().blocksRaycasts = true;
+        }
+    }
+
+    private void AddQuantity(int addAmount) {
+        Text quantityText = startParent.GetComponentInChildren<Text>();
+        int quantity = GetQuantity() + addAmount;
+
+        if(quantity > 0) {
+            quantityText.text = quantity.ToString();
+        } else if (quantity <= 0) {
+            quantityText.text = "";
+        }
+    }
+
+    private int GetQuantity() {
+        int quantity;
+        Text parentText = startParent.GetComponentInChildren<Text>();
+        if (parentText != null && int.TryParse(parentText.text, out quantity)) {
+            return quantity;
+        }
+        return 0;
+    }
 }

@@ -9,6 +9,9 @@ TagManager:
   - Boundary
   - Item Drop
   - UICanvas
+  - Inventory
+  - InventoryPanel
+  - DescriptionPanel
   layers:
   - Default
   - TransparentFX
