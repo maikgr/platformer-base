@@ -22,9 +22,10 @@ GameObject:
   - component: {fileID: 222077459282996482}
   - component: {fileID: 114774930695403194}
   - component: {fileID: 225316359059511488}
+  - component: {fileID: 114319056042009372}
   m_Layer: 5
   m_Name: ItemSpeed
-  m_TagString: Untagged
+  m_TagString: Item Drop
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -73,6 +74,17 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+--- !u!114 &114319056042009372
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1729969314578028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73033b90e5cff4b429ce9b34876f0486, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114774930695403194
 MonoBehaviour:
   m_ObjectHideFlags: 1

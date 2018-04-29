@@ -8,6 +8,7 @@ TagManager:
   - Bullet
   - Boundary
   - Item Drop
+  - UICanvas
   layers:
   - Default
   - TransparentFX
@@ -17,7 +18,7 @@ TagManager:
   - UI
   - 
   - 
-  - 
+  - DragItem
   - 
   - 
   - 
@@ -44,4 +45,7 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: DragItem
+    uniqueID: 2279924969
     locked: 0
