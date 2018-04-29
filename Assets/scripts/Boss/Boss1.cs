@@ -25,7 +25,7 @@ public class Boss1 : MonoBehaviour {
 			}
 		} else if (moveToSide) {
 			transform.position = Vector3.MoveTowards (transform.position, side, 9 * Time.deltaTime);
-			//transform.rotation =  Quaternion.Lerp(transform.rotation, Quaternion.identity, Time.deltaTime * 8 );
+			transform.rotation =  Quaternion.Lerp(transform.rotation, Quaternion.identity, Time.deltaTime * 8 );
 			if (transform.position == side) {
 				moveToSide = false;
 				BossPhase3b ();
