@@ -4776,31 +4776,16 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 82002803040077548, guid: 3c7a5a851644545a9a9d1fbf59d21681,
+    - target: {fileID: 114516153597588654, guid: 3c7a5a851644545a9a9d1fbf59d21681,
         type: 2}
-      propertyPath: m_Volume
-      value: 0.3
-      objectReference: {fileID: 0}
-    - target: {fileID: 82002803040077548, guid: 3c7a5a851644545a9a9d1fbf59d21681,
-        type: 2}
-      propertyPath: m_audioClip
-      value: 
-      objectReference: {fileID: 8300000, guid: 4a483a9e1c2157a44864cfe3feaf91f2, type: 3}
-    - target: {fileID: 82002803040077548, guid: 3c7a5a851644545a9a9d1fbf59d21681,
-        type: 2}
-      propertyPath: spreadCustomCurve.m_RotationOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1001532730931170, guid: 3c7a5a851644545a9a9d1fbf59d21681, type: 2}
-      propertyPath: m_IsActive
+      propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 114516153597588654, guid: 3c7a5a851644545a9a9d1fbf59d21681,
         type: 2}
-      propertyPath: ExplosionPrefab
-      value: 
-      objectReference: {fileID: 1674642506496168, guid: 8e19b39147b437f479e64107480d6055,
-        type: 2}
+      propertyPath: announceHealth
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3c7a5a851644545a9a9d1fbf59d21681, type: 2}
   m_IsPrefabParent: 0

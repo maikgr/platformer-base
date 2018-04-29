@@ -30,17 +30,4 @@ public class Components {
 		DamageOnContact
 	};
 
-	public static IDictionary<ItemName, string> enumToString = new Dictionary<ItemName, string>() {
-		{ItemName.BulletSpeed, BulletSpeed},
-		{ItemName.BulletSize, BulletSize},
-		{ItemName.BulletDamage, BulletDamage},
-		{ItemName.FiringRate, FiringRate},
-		{ItemName.Pierce, Pierce},
-		{ItemName.Spread, Spread},
-		{ItemName.Explosion, Explosion},
-		{ItemName.Homing, Homing},
-		{ItemName.Health, Health},
-		{ItemName.MovementSpeed, MovementSpeed},
-		{ItemName.DamageOnContact, DamageOnContact}
-	};
 }

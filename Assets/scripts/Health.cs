@@ -52,4 +52,9 @@ public class Health : MonoBehaviour {
 	public int GetFullHealth() {
 		return fullHealth;
 	}
+
+	public void SetFullHealth(int hp) {
+		fullHealth = hp;
+		Init ();
+	}
 }
