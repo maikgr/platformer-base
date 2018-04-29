@@ -7,6 +7,7 @@ public class Health : MonoBehaviour {
 	public int currentHealth;
 	public int fullHealth;
 	public bool announceHealth;
+    public GameObject ExplosionPrefab;
 
 	private HealthEvent healthEvent;
 
@@ -27,6 +28,7 @@ public class Health : MonoBehaviour {
 			if (GetComponent<OnDeath>() != null) {
 				GetComponent<OnDeath>().Execute();
 			}
+            Instantiate(ExplosionPrefab, transform.position, Quaternion.identity);
 			Destroy(gameObject);
 		}
 

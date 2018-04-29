@@ -117,6 +117,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentHealth: 0
   fullHealth: 10
+  announceHealth: 0
+  ExplosionPrefab: {fileID: 1929691885755598, guid: 9ad62561940aefb48b47453e4cd03230,
+    type: 2}
 --- !u!114 &114701695743322230
 MonoBehaviour:
   m_ObjectHideFlags: 1

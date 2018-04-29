@@ -73,6 +73,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 0}
   speed: 9
+  direction: 1
 --- !u!114 &114415663312700234
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -96,7 +97,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 455e9eadb5bb349cba88fa441d2bbfd0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 10
+  damage: 1
   isPlayer: 0
 --- !u!136 &136671551966734638
 CapsuleCollider:

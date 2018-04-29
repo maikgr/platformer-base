@@ -1209,6 +1209,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 4048107394722292}
   speed: 4
+  direction: 0
 --- !u!114 &114418025266494756
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1327,6 +1328,8 @@ MonoBehaviour:
   currentHealth: 0
   fullHealth: 40
   announceHealth: 1
+  ExplosionPrefab: {fileID: 1674642506496168, guid: 8e19b39147b437f479e64107480d6055,
+    type: 2}
 --- !u!114 &114897079335060250
 MonoBehaviour:
   m_ObjectHideFlags: 1

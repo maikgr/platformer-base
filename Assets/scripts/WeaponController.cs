@@ -14,10 +14,12 @@ public class WeaponController : MonoBehaviour
 	public float pauseTime; // time to next barrage
 	public int numShots; // number of shots before pausing
 
+    private AudioSource shootSfx;
 
 	void Start ()
 	{
 		StartCoroutine("FireShots");
+        shootSfx = GetComponent<AudioSource>();
 	}
 
 	IEnumerator FireShots() 
@@ -34,6 +36,7 @@ public class WeaponController : MonoBehaviour
 
 	IEnumerator Fire ()
 	{
+        shootSfx.Play();
 		for (int i = 0; i < shotSpawn.Length; i++) {
 			Instantiate (shot, shotSpawn[i].position, shotSpawn[i].rotation);
 			yield return new WaitForSeconds (weaponDelay);

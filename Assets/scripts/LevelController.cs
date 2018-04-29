@@ -42,7 +42,7 @@ public class LevelController : MonoBehaviour {
 	IEnumerator SpawnWave(GameObject enemy) {
 		state = SpawnState.SPAWNING;
 
-		Instantiate(enemy, spawnPoint, transform.rotation);
+		Instantiate(enemy, spawnPoint, Quaternion.identity);
 
 		state = SpawnState.WAITING;
 		yield break;

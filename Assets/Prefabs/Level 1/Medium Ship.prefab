@@ -101,6 +101,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentHealth: 0
   fullHealth: 10
+  announceHealth: 0
+  ExplosionPrefab: {fileID: 1929691885755598, guid: 9ad62561940aefb48b47453e4cd03230,
+    type: 2}
 --- !u!114 &114251676141463460
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -112,7 +115,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d5f785e7fa18ef40a080fa344271b04, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  target: {fileID: 0}
   speed: 3
+  direction: -1
 --- !u!135 &135535249553965382
 SphereCollider:
   m_ObjectHideFlags: 1

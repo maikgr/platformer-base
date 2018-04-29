@@ -5,6 +5,7 @@ public class Mover : MonoBehaviour
 {
 	public Transform target;
 	public float speed;
+    public MoveDirection direction;
 	private Rigidbody rigidbody;
 
 	void Start ()
@@ -15,9 +16,14 @@ public class Mover : MonoBehaviour
 			rigidbody = GetComponent<Rigidbody> ();
 		}
 
-		Vector3 dir = transform.right;
+		Vector3 dir = direction.Equals(MoveDirection.Right) ? transform.right : -transform.right;
 		dir.Normalize ();
 
 		rigidbody.velocity = dir * speed;
 	}
+
+    public enum MoveDirection {
+        Left,
+        Right
+    }
 }
