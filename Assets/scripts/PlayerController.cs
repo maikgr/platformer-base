@@ -9,15 +9,18 @@ public class Boundary
 
 public class PlayerController : MonoBehaviour
 {
+
+	public Transform[] allShotSpawn;
+	public Boundary boundary;
+
     private Rigidbody rb;
 
-    public float speed;
-    public Boundary boundary;
+    private float speed;
 
     public GameObject shot;
-    public Transform[] shotSpawn;
-    public float fireRate;
+    private Transform[] shotSpawn;
 
+    private float fireRate;
     private float nextFire;
     private AudioSource shootSfx;
 
@@ -53,4 +56,16 @@ public class PlayerController : MonoBehaviour
             0.0f
         );
     }
+
+	public void setFireRate(float rate) {
+		fireRate = rate;
+	}
+
+	public void setMovementSpeed(float s) {
+		speed = s;
+	}
+
+	public void setShotSpawn(Transform[] spawns) {
+		shotSpawn = spawns;
+	}
 }

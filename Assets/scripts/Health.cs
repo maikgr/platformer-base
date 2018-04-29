@@ -25,9 +25,7 @@ public class Health : MonoBehaviour {
 
 	void Update() {
 		if (currentHealth <= 0) {
-			if (GetComponent<OnDeath>() != null) {
-				GetComponent<OnDeath>().Execute();
-			}
+			GetComponent<OnDeath>().Execute();
             Instantiate(ExplosionPrefab, transform.position, Quaternion.identity);
 			Destroy(gameObject);
 		}
@@ -51,5 +49,10 @@ public class Health : MonoBehaviour {
 
 	public int GetFullHealth() {
 		return fullHealth;
+	}
+
+	public void SetFullHealth(int hp) {
+		fullHealth = hp;
+		Init ();
 	}
 }

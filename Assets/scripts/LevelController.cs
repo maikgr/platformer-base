@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class LevelController : MonoBehaviour {
 
@@ -12,15 +13,18 @@ public class LevelController : MonoBehaviour {
     public Vector2 spawnPoint;
 	public float[] timeToNextWave;
 	public GameObject[] enemyWave; //prefabs
-	public Inventory inventory;
+	private Inventory inventory;
 
 	private int currentWave = 0;
 	private float timeCountdown;
 
+	public GameObject winText, loseText;
+
 	private SpawnState state = SpawnState.COUNTING;
 
-	// Use this for initialization
+	// Use this for initializations
 	void Start () {
+		inventory = GameObject.Find ("Inventory").GetComponent<Inventory> ();
 		timeCountdown = timeToNextWave[currentWave];
 		Event.StartListening (Event.GameEvent.BossDead, OnBossDie);
 		Event.StartListening (Event.GameEvent.PlayerDead, OnPlayerDie);
@@ -51,11 +55,19 @@ public class LevelController : MonoBehaviour {
 	void OnBossDie() {
 		inventory.AddCargoToWorkshopInventory ();
 		inventory.ClearCargo ();
+		winText.SetActive (true);
+		Invoke ("LoadScene", 2);
 		Debug.Log ("Boss dead");
 	}
 
 	void OnPlayerDie() {
 		inventory.ClearCargo ();
+		loseText.SetActive (true);
+		Invoke ("LoadScene", 2);
 		Debug.Log ("Player dead");
+	}
+
+	void LoadScene() {
+		SceneManager.LoadScene ("mission", LoadSceneMode.Single);
 	}
 }

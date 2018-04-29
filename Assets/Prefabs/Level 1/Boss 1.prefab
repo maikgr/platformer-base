@@ -1417,8 +1417,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d81807e04606b4f138aa219f421c208a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  healthPercentage1: 0.75
-  healthPercentage2: 0.25
+  healthPercentage1: 0.65
+  healthPercentage2: 0.35
 --- !u!114 &114263240357146044
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1569,7 +1569,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentHealth: 0
-  fullHealth: 40
+  fullHealth: 80
   announceHealth: 1
   ExplosionPrefab: {fileID: 1674642506496168, guid: 8e19b39147b437f479e64107480d6055,
     type: 2}

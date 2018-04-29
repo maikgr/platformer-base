@@ -78,5 +78,4 @@ public class Inventory : MonoBehaviour {
     public IDictionary<Components.ItemName, int> GetWorkshopInventory() {
         return workshopInventory;
     }
-
 }
