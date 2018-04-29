@@ -53,8 +53,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1017878918389082}
-  m_LocalRotation: {x: 0, y: 1, z: 0, w: -0.00000016292068}
-  m_LocalPosition: {x: 0, y: 0, z: -0.5}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4590177604143752}
@@ -100,10 +100,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e44c8131b53f45de9d186223cc5c550, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  name: 
   shot: {fileID: 1294360445382360, guid: ebc6d3ac403ae4d7fbfa9fd721f7d63f, type: 2}
-  shotSpawn: {fileID: 4200410209142248}
-  fireRate: 0.05
+  shotSpawn:
+  - {fileID: 4200410209142248}
   initialDelay: 1
+  fireRate: 0.05
+  weaponDelay: 0
   pauseTime: 3
   numShots: 3
 --- !u!114 &114459985190687000
@@ -118,7 +121,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 1
-  direction: left
 --- !u!114 &114639039237096794
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -130,6 +132,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8cf24858157a41e0b567b9a2d07b345, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  currentHealth: 0
   fullHealth: 10
 --- !u!135 &135848370769587246
 SphereCollider:

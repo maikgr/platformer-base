@@ -6,8 +6,19 @@ public class Health : MonoBehaviour {
 
 	public int currentHealth;
 	public int fullHealth;
+	public bool announceHealth;
+
+	private HealthEvent healthEvent;
 
 	void Start() {
+		Init ();
+
+		if (announceHealth) {
+			healthEvent = GetComponent<HealthEvent> ();
+		}
+	}
+
+	protected virtual void Init() {
 		currentHealth = fullHealth;
 	}
 
@@ -18,6 +29,10 @@ public class Health : MonoBehaviour {
 			}
 			Destroy(gameObject);
 		}
+
+		if (announceHealth) {
+			healthEvent.announceHealth (currentHealth);
+		}
 	}
 
 	public void DealDamage(int damage) {
@@ -26,5 +41,13 @@ public class Health : MonoBehaviour {
 
 	public void Heal(int amount) {
 		currentHealth += amount;
+	}
+
+	public int GetHealth() {
+		return currentHealth;
+	}
+
+	public int GetFullHealth() {
+		return fullHealth;
 	}
 }

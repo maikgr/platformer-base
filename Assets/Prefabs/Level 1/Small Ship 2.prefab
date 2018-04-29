@@ -113,8 +113,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d5f785e7fa18ef40a080fa344271b04, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1
-  direction: left
+  speed: 5
 --- !u!114 &114607627284797942
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -126,12 +125,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e44c8131b53f45de9d186223cc5c550, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  name: 
   shot: {fileID: 1294360445382360, guid: ebc6d3ac403ae4d7fbfa9fd721f7d63f, type: 2}
-  shotSpawn: {fileID: 4024367498939278}
-  fireRate: 0.25
+  shotSpawn:
+  - {fileID: 4024367498939278}
   initialDelay: 0
+  fireRate: 0.25
+  weaponDelay: 0
   pauseTime: 0
-  numShots: 0
+  numShots: 1
 --- !u!135 &135818924078569796
 SphereCollider:
   m_ObjectHideFlags: 1

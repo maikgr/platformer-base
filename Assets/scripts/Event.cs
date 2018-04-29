@@ -56,7 +56,9 @@ class Event : MonoBehaviour {
 
 	public enum GameEvent {
 		PlayerDead,
-		BossDead
+		BossDead,
+		BossHealth1,
+		BossHealth2
 	}
 }
 

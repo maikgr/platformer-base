@@ -25,7 +25,6 @@ GameObject:
   - component: {fileID: 212151757866039950}
   - component: {fileID: 135138942526043740}
   - component: {fileID: 114494615111216802}
-  - component: {fileID: 114108675105598436}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -160,28 +159,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
-  tilt: 2
   boundary:
     xMin: -16
     xMax: 16
     yMin: -9
     yMax: 9
-  shot: {fileID: 1807008572423188, guid: aceb1b42b3c1b46339f55f131988bf41, type: 2}
-  shotSpawn: {fileID: 4358472824305970}
+  shot: {fileID: 1957521399922894, guid: 284cd12f52e7a48aa8c40a12282f695e, type: 2}
+  shotSpawn: {fileID: 4431675374378132}
   fireRate: 0.35
---- !u!114 &114108675105598436
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1001532730931170}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e8cf24858157a41e0b567b9a2d07b345, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  currentHealth: 0
-  fullHealth: 100
 --- !u!114 &114494615111216802
 MonoBehaviour:
   m_ObjectHideFlags: 1
