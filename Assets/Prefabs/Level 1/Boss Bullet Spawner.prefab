@@ -52,12 +52,11 @@ GameObject:
   - component: {fileID: 54207205287857064}
   - component: {fileID: 135861518256202504}
   - component: {fileID: 114805634962017470}
-  - component: {fileID: 114716914755064122}
   - component: {fileID: 114884019570075950}
   - component: {fileID: 212427430526831340}
   m_Layer: 0
-  m_Name: Boss Bullet 2
-  m_TagString: Enemy
+  m_Name: Boss Bullet Spawner
+  m_TagString: Bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -118,23 +117,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &114716914755064122
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1795451618565158}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0e44c8131b53f45de9d186223cc5c550, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  shot: {fileID: 1085282361889516, guid: 4fb82032acf744b6a9c28829ef7d226c, type: 2}
-  shotSpawn: {fileID: 4563655417251728}
-  fireRate: 0.5
-  initialDelay: 0
-  pauseTime: 0
-  numShots: 0
 --- !u!114 &114805634962017470
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -146,12 +128,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e44c8131b53f45de9d186223cc5c550, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shot: {fileID: 1622489409862738, guid: f4bdafe18758e483ebec02f91e92d270, type: 2}
-  shotSpawn: {fileID: 4352457799604150}
-  fireRate: 0.5
-  initialDelay: 0
+  name: 
+  shot: {fileID: 1114717310588044, guid: 6f4b11387eef64118be94841eb726e72, type: 2}
+  shotSpawn:
+  - {fileID: 4352457799604150}
+  - {fileID: 4563655417251728}
+  initialDelay: 1
+  fireRate: 0.05
+  weaponDelay: 0
   pauseTime: 0
-  numShots: 0
+  numShots: 1
 --- !u!114 &114884019570075950
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -171,11 +157,11 @@ SphereCollider:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1795451618565158}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
+  m_IsTrigger: 1
+  m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.85
-  m_Center: {x: 0, y: 0, z: -0.3}
+  m_Radius: 0.1968739
+  m_Center: {x: 0, y: 0.061230183, z: -0.3}
 --- !u!212 &212427430526831340
 SpriteRenderer:
   m_ObjectHideFlags: 1

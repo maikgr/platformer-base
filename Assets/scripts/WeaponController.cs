@@ -3,37 +3,40 @@ using System.Collections;
 
 public class WeaponController : MonoBehaviour
 {
+	public string name; // Name of weapon
+
 	public GameObject shot;
-	public Transform shotSpawn;
-	public float fireRate;
-	public float initialDelay;
-	public float pauseTime;
-	public int numShots;
+	public Transform[] shotSpawn;
+
+	public float initialDelay; // initial delay 
+	public float fireRate; // rate at which bullets are fired
+	public float weaponDelay; // delay between each spawn point (if multiple)
+	public float pauseTime; // time to next barrage
+	public int numShots; // number of shots before pausing
 
 
 	void Start ()
 	{
-		if (numShots > 0) {
-			StartCoroutine("FireShots");
-
-		} else {
-			InvokeRepeating ("Fire", initialDelay, fireRate);
-		}
+		StartCoroutine("FireShots");
 	}
 
 	IEnumerator FireShots() 
 	{
+		yield return new WaitForSeconds (initialDelay);
 		while (true) {
 			for (int i = 0; i < numShots; i++) {
-				Fire ();
+				StartCoroutine("Fire");
 				yield return new WaitForSeconds (fireRate);
 			}
 			yield return new WaitForSeconds (pauseTime);
 		}
 	}
 
-	void Fire ()
+	IEnumerator Fire ()
 	{
-		Instantiate(shot, shotSpawn.position, shotSpawn.rotation);
+		for (int i = 0; i < shotSpawn.Length; i++) {
+			Instantiate (shot, shotSpawn[i].position, shotSpawn[i].rotation);
+			yield return new WaitForSeconds (weaponDelay);
+		}
 	}
 }

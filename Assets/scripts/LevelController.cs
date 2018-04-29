@@ -21,12 +21,15 @@ public class LevelController : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		timeCountdown = timeToNextWave[currentWave];
+		Event.StartListening (Event.GameEvent.BossDead, OnBossDie);
+		Event.StartListening (Event.GameEvent.PlayerDead, OnPlayerDie);
+
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		if (timeCountdown <= 0) {
-			if (state != SpawnState.SPAWNING) {
+		if (timeCountdown <= 0 && currentWave < enemyWave.Length) {
+			if (state != SpawnState.SPAWNING ) {
 				StartCoroutine(SpawnWave(enemyWave[currentWave]));
 			}
 			currentWave++;
@@ -39,9 +42,17 @@ public class LevelController : MonoBehaviour {
 	IEnumerator SpawnWave(GameObject enemy) {
 		state = SpawnState.SPAWNING;
 
-		Instantiate(enemy, spawnPoint, Quaternion.identity);
+		Instantiate(enemy, spawnPoint, transform.rotation);
 
 		state = SpawnState.WAITING;
 		yield break;
+	}
+
+	void OnBossDie() {
+		Debug.Log ("Boss dead");
+	}
+
+	void OnPlayerDie() {
+		Debug.Log ("Player dead");
 	}
 }

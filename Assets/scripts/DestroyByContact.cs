@@ -1,35 +1,22 @@
-﻿using UnityEngine;
-using System.Collections;
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
 
-public class DestroyByContact : MonoBehaviour
-{
-	public GameObject explosion;
-	public GameObject playerExplosion;
-	public int scoreValue;
+public class DestroyByContact : MonoBehaviour {
 
-	void Start ()
+	public bool isPlayer;
+
+	void OnTriggerEnter (Collider other) 
 	{
-
+		if (IsOpponent(other.tag))
+			Destroy(gameObject);
 	}
 
-	void OnTriggerEnter (Collider other)
-	{
-		if (other.tag == "Boundary" || other.tag == "Enemy")
-		{
-			return;
-		}
+	bool IsOpponent(string tagName) {
+		if (isPlayer)
+			return (tagName == "Enemy" || tagName == "Boss");
+		else
+			return tagName == "Player";
 
-		if (explosion != null)
-		{
-			Instantiate(explosion, transform.position, transform.rotation);
-		}
-
-		if (other.tag == "Player")
-		{
-			Instantiate(playerExplosion, other.transform.position, other.transform.rotation);
-		}
-		
-		Destroy (other.gameObject);
-		Destroy (gameObject);
 	}
 }

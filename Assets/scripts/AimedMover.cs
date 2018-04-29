@@ -17,11 +17,10 @@ public class AimedMover : MonoBehaviour
 		target = GameObject.FindWithTag ("Player").transform;
 
 		direction =	target.position - transform.position;
+		direction.Normalize ();
+		rigidbody.velocity = direction * speed;
 	}
 
-	void Update () 
-	{
-		transform.position += direction * speed * Time.deltaTime;
-	}
+
 
 }

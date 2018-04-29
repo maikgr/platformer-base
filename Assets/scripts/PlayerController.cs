@@ -12,11 +12,10 @@ public class PlayerController : MonoBehaviour
 	private Rigidbody rb;
 
 	public float speed;
-	public float tilt;
 	public Boundary boundary;
 
 	public GameObject shot;
-	public Transform shotSpawn;
+	public Transform[] shotSpawn;
 	public float fireRate;
 	 
 	private float nextFire;
@@ -26,7 +25,9 @@ public class PlayerController : MonoBehaviour
 		if (Input.GetKey("space") && Time.time > nextFire) 
 		{
 			nextFire = Time.time + fireRate;
-			Instantiate(shot, shotSpawn.position, shotSpawn.rotation);
+			for (int i = 0; i < shotSpawn.Length; i++) {
+				Instantiate (shot, shotSpawn[i].position, shotSpawn[i].rotation);
+			}
 		}
 	}
 
