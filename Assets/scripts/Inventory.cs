@@ -7,9 +7,9 @@ public class Inventory : MonoBehaviour {
 	
 	private static bool created = false;
 
-	private IDictionary<string, int> cargo = new Dictionary<string, int> ();
-	private IDictionary<string, int> workshopInventory = new Dictionary<string, int> ();
-	private IDictionary<string, int> installedComponents = new Dictionary<string, int> ();
+	private IDictionary<Components.ItemName, int> cargo = new Dictionary<string, int> ();
+	private IDictionary<Components.ItemName, int> workshopInventory = new Dictionary<string, int> ();
+	private IDictionary<Components.ItemName, int> installedComponents = new Dictionary<string, int> ();
 		
 	void Awake() {
 		if (!created) {
@@ -18,7 +18,7 @@ public class Inventory : MonoBehaviour {
 		}
 	}
 
-	public void AddToCargo(string item) {
+	public void AddToCargo(Components.ItemName item) {
 		int result;
 		if (cargo.TryGetValue (item, out result)) {
 			result++;
@@ -31,7 +31,7 @@ public class Inventory : MonoBehaviour {
 		string itemName;
 		int val, result;
 
-		foreach(KeyValuePair<string, int> entry in cargo)
+		foreach(KeyValuePair<Components.ItemName, int> entry in cargo)
 		{
 			itemName = entry.Key;
 			val = entry.Value;
