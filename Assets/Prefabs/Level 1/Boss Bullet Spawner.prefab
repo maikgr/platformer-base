@@ -35,7 +35,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4352457799604150}
   m_Layer: 0
-  m_Name: ' Shot Spawn Up'
+  m_Name: Shot Spawn Up
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
