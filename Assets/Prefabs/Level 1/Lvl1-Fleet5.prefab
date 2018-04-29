@@ -70,6 +70,7 @@ GameObject:
   - component: {fileID: 114559572413718410}
   - component: {fileID: 114163016375836250}
   - component: {fileID: 212444170169580210}
+  - component: {fileID: 114931673511698774}
   - component: {fileID: 82383751466828986}
   m_Layer: 0
   m_Name: Turret 1
@@ -92,6 +93,7 @@ GameObject:
   - component: {fileID: 114083468625017538}
   - component: {fileID: 114054132924388786}
   - component: {fileID: 212110426757355174}
+  - component: {fileID: 114087383137034518}
   - component: {fileID: 82878797095306064}
   m_Layer: 0
   m_Name: Turret 1 (1)
@@ -395,6 +397,23 @@ MonoBehaviour:
   announceHealth: 0
   ExplosionPrefab: {fileID: 1929691885755598, guid: 9ad62561940aefb48b47453e4cd03230,
     type: 2}
+--- !u!114 &114087383137034518
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1867572451477538}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0edc3c22ab57b47708424921d51123ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  announceDeath: 0
+  dropLoot: 0
+  loot:
+  - {fileID: 1481256056298548, guid: 51a505d4eb0cc441fb1aebc126afd9ab, type: 2}
+  lootChance:
+  - 0.2
 --- !u!114 &114163016375836250
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -445,6 +464,23 @@ MonoBehaviour:
   target: {fileID: 0}
   speed: 3
   direction: 0
+--- !u!114 &114931673511698774
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1629734893066454}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0edc3c22ab57b47708424921d51123ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  announceDeath: 0
+  dropLoot: 0
+  loot:
+  - {fileID: 1481256056298548, guid: 51a505d4eb0cc441fb1aebc126afd9ab, type: 2}
+  lootChance:
+  - 0.2
 --- !u!114 &114977406061239592
 MonoBehaviour:
   m_ObjectHideFlags: 1

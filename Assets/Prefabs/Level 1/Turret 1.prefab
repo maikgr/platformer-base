@@ -40,6 +40,7 @@ GameObject:
   - component: {fileID: 114639039237096794}
   - component: {fileID: 114166051665700484}
   - component: {fileID: 212432364162116502}
+  - component: {fileID: 114315634613726364}
   - component: {fileID: 82957522969060556}
   m_Layer: 0
   m_Name: Turret 1
@@ -190,6 +191,25 @@ MonoBehaviour:
   weaponDelay: 0
   pauseTime: 3
   numShots: 5
+--- !u!114 &114315634613726364
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1657858490739774}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0edc3c22ab57b47708424921d51123ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  announceDeath: 0
+  dropLoot: 1
+  loot:
+  - {fileID: 1856277657228328, guid: 1488f7a1be7c2406e9dd18ab2a180b39, type: 2}
+  - {fileID: 1629407175288176, guid: 1818e16dacaba4d57ad1562202bcc82e, type: 2}
+  lootChance:
+  - 0.2
+  - 0.1
 --- !u!114 &114459985190687000
 MonoBehaviour:
   m_ObjectHideFlags: 1

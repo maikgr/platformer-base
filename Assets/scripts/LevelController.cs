@@ -12,6 +12,7 @@ public class LevelController : MonoBehaviour {
     public Vector2 spawnPoint;
 	public float[] timeToNextWave;
 	public GameObject[] enemyWave; //prefabs
+	public Inventory inventory;
 
 	private int currentWave = 0;
 	private float timeCountdown;
@@ -23,7 +24,6 @@ public class LevelController : MonoBehaviour {
 		timeCountdown = timeToNextWave[currentWave];
 		Event.StartListening (Event.GameEvent.BossDead, OnBossDie);
 		Event.StartListening (Event.GameEvent.PlayerDead, OnPlayerDie);
-
 	}
 	
 	// Update is called once per frame
@@ -49,10 +49,13 @@ public class LevelController : MonoBehaviour {
 	}
 
 	void OnBossDie() {
+		inventory.AddTempToInventory ();
+		inventory.ClearTemp ();
 		Debug.Log ("Boss dead");
 	}
 
 	void OnPlayerDie() {
+		inventory.ClearTemp ();
 		Debug.Log ("Player dead");
 	}
 }

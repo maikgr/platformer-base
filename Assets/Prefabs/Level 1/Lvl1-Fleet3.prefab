@@ -40,6 +40,7 @@ GameObject:
   - component: {fileID: 114031800176426546}
   - component: {fileID: 114260331105873810}
   - component: {fileID: 212501630542606920}
+  - component: {fileID: 114565299452018754}
   - component: {fileID: 82674971372818710}
   m_Layer: 0
   m_Name: Small Ship 2
@@ -92,6 +93,7 @@ GameObject:
   - component: {fileID: 114287302811085498}
   - component: {fileID: 114090915032548724}
   - component: {fileID: 212434503506458806}
+  - component: {fileID: 114753363348370446}
   - component: {fileID: 82120427261073094}
   m_Layer: 0
   m_Name: Small Ship 2 (1)
@@ -431,6 +433,25 @@ MonoBehaviour:
   weaponDelay: 0
   pauseTime: 4
   numShots: 3
+--- !u!114 &114565299452018754
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1602504414856692}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0edc3c22ab57b47708424921d51123ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  announceDeath: 0
+  dropLoot: 1
+  loot:
+  - {fileID: 1275957643604192, guid: e0e2f0ec9bf6c45b3b56ae34ff226ac9, type: 2}
+  - {fileID: 1856277657228328, guid: 1488f7a1be7c2406e9dd18ab2a180b39, type: 2}
+  lootChance:
+  - 0.1
+  - 0.1
 --- !u!114 &114603281420856522
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -445,6 +466,25 @@ MonoBehaviour:
   target: {fileID: 0}
   speed: 7
   direction: 0
+--- !u!114 &114753363348370446
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1913769678114224}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0edc3c22ab57b47708424921d51123ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  announceDeath: 0
+  dropLoot: 1
+  loot:
+  - {fileID: 1275957643604192, guid: e0e2f0ec9bf6c45b3b56ae34ff226ac9, type: 2}
+  - {fileID: 1856277657228328, guid: 1488f7a1be7c2406e9dd18ab2a180b39, type: 2}
+  lootChance:
+  - 0.1
+  - 0.1
 --- !u!114 &114912829587488514
 MonoBehaviour:
   m_ObjectHideFlags: 1

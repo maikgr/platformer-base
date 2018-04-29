@@ -25,6 +25,8 @@ GameObject:
   - component: {fileID: 114557108915496430}
   - component: {fileID: 114693819719702050}
   - component: {fileID: 212901787240633148}
+  - component: {fileID: 114381137842929290}
+  - component: {fileID: 114897858456200874}
   - component: {fileID: 82636071747043838}
   m_Layer: 0
   m_Name: Small Ship 1
@@ -47,6 +49,7 @@ GameObject:
   - component: {fileID: 114247542467922274}
   - component: {fileID: 114099956471841746}
   - component: {fileID: 212016938702149672}
+  - component: {fileID: 114483143337227666}
   - component: {fileID: 82679732913720448}
   m_Layer: 0
   m_Name: Small Ship 1 (4)
@@ -84,6 +87,7 @@ GameObject:
   - component: {fileID: 114073358192679842}
   - component: {fileID: 114897221578980798}
   - component: {fileID: 212426010144397878}
+  - component: {fileID: 114691249665646164}
   - component: {fileID: 82815425329545268}
   m_Layer: 0
   m_Name: Small Ship 1 (6)
@@ -181,6 +185,7 @@ GameObject:
   - component: {fileID: 114583469571561292}
   - component: {fileID: 114984002703228694}
   - component: {fileID: 212654618041914340}
+  - component: {fileID: 114533051227929986}
   - component: {fileID: 82035807986777786}
   m_Layer: 0
   m_Name: Small Ship 1 (1)
@@ -233,6 +238,7 @@ GameObject:
   - component: {fileID: 114814632960535952}
   - component: {fileID: 114934826007815546}
   - component: {fileID: 212096141804900686}
+  - component: {fileID: 114963022784415768}
   - component: {fileID: 82176018700069444}
   m_Layer: 0
   m_Name: Small Ship 1 (7)
@@ -270,6 +276,7 @@ GameObject:
   - component: {fileID: 114877549874777046}
   - component: {fileID: 114521987725736110}
   - component: {fileID: 212715606392848164}
+  - component: {fileID: 114985534301513602}
   - component: {fileID: 82405493259953036}
   m_Layer: 0
   m_Name: Small Ship 1 (2)
@@ -292,6 +299,7 @@ GameObject:
   - component: {fileID: 114289317650941050}
   - component: {fileID: 114323849491449144}
   - component: {fileID: 212266603987040116}
+  - component: {fileID: 114832350706987406}
   - component: {fileID: 82112805834257086}
   m_Layer: 0
   m_Name: Small Ship 1 (5)
@@ -314,6 +322,7 @@ GameObject:
   - component: {fileID: 114153047918424780}
   - component: {fileID: 114569758437802598}
   - component: {fileID: 212955681288733954}
+  - component: {fileID: 114621847251274512}
   - component: {fileID: 82328609396865766}
   m_Layer: 0
   m_Name: Small Ship 1 (3)
@@ -1459,6 +1468,27 @@ MonoBehaviour:
   announceHealth: 0
   ExplosionPrefab: {fileID: 1929691885755598, guid: 9ad62561940aefb48b47453e4cd03230,
     type: 2}
+--- !u!114 &114381137842929290
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1007807733349896}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0edc3c22ab57b47708424921d51123ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  announceDeath: 0
+  dropLoot: 1
+  loot:
+  - {fileID: 1275957643604192, guid: e0e2f0ec9bf6c45b3b56ae34ff226ac9, type: 2}
+  - {fileID: 1570120654186710, guid: 8222bccb2107a4e818224323326ec256, type: 2}
+  - {fileID: 1911493964852280, guid: 88a06896a28ab483fa89eeffadaad453, type: 2}
+  lootChance:
+  - 0.1
+  - 0.1
+  - 0.1
 --- !u!114 &114398909951991528
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1473,6 +1503,27 @@ MonoBehaviour:
   target: {fileID: 0}
   speed: 5
   direction: -1
+--- !u!114 &114483143337227666
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1040405474701152}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0edc3c22ab57b47708424921d51123ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  announceDeath: 0
+  dropLoot: 1
+  loot:
+  - {fileID: 1275957643604192, guid: e0e2f0ec9bf6c45b3b56ae34ff226ac9, type: 2}
+  - {fileID: 1570120654186710, guid: 8222bccb2107a4e818224323326ec256, type: 2}
+  - {fileID: 1911493964852280, guid: 88a06896a28ab483fa89eeffadaad453, type: 2}
+  lootChance:
+  - 0.1
+  - 0.1
+  - 0.1
 --- !u!114 &114521987725736110
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1489,6 +1540,27 @@ MonoBehaviour:
   announceHealth: 0
   ExplosionPrefab: {fileID: 1929691885755598, guid: 9ad62561940aefb48b47453e4cd03230,
     type: 2}
+--- !u!114 &114533051227929986
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1414103175297792}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0edc3c22ab57b47708424921d51123ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  announceDeath: 0
+  dropLoot: 1
+  loot:
+  - {fileID: 1275957643604192, guid: e0e2f0ec9bf6c45b3b56ae34ff226ac9, type: 2}
+  - {fileID: 1570120654186710, guid: 8222bccb2107a4e818224323326ec256, type: 2}
+  - {fileID: 1911493964852280, guid: 88a06896a28ab483fa89eeffadaad453, type: 2}
+  lootChance:
+  - 0.1
+  - 0.1
+  - 0.1
 --- !u!114 &114557108915496430
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1559,6 +1631,48 @@ MonoBehaviour:
   target: {fileID: 0}
   speed: 5
   direction: -1
+--- !u!114 &114621847251274512
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1928045854613340}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0edc3c22ab57b47708424921d51123ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  announceDeath: 0
+  dropLoot: 1
+  loot:
+  - {fileID: 1275957643604192, guid: e0e2f0ec9bf6c45b3b56ae34ff226ac9, type: 2}
+  - {fileID: 1570120654186710, guid: 8222bccb2107a4e818224323326ec256, type: 2}
+  - {fileID: 1911493964852280, guid: 88a06896a28ab483fa89eeffadaad453, type: 2}
+  lootChance:
+  - 0.1
+  - 0.1
+  - 0.1
+--- !u!114 &114691249665646164
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1122850328574792}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0edc3c22ab57b47708424921d51123ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  announceDeath: 0
+  dropLoot: 1
+  loot:
+  - {fileID: 1275957643604192, guid: e0e2f0ec9bf6c45b3b56ae34ff226ac9, type: 2}
+  - {fileID: 1570120654186710, guid: 8222bccb2107a4e818224323326ec256, type: 2}
+  - {fileID: 1911493964852280, guid: 88a06896a28ab483fa89eeffadaad453, type: 2}
+  lootChance:
+  - 0.1
+  - 0.1
+  - 0.1
 --- !u!114 &114693819719702050
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1651,6 +1765,27 @@ MonoBehaviour:
   weaponDelay: 0
   pauseTime: 0
   numShots: 1
+--- !u!114 &114832350706987406
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1758287263627094}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0edc3c22ab57b47708424921d51123ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  announceDeath: 0
+  dropLoot: 1
+  loot:
+  - {fileID: 1275957643604192, guid: e0e2f0ec9bf6c45b3b56ae34ff226ac9, type: 2}
+  - {fileID: 1570120654186710, guid: 8222bccb2107a4e818224323326ec256, type: 2}
+  - {fileID: 1911493964852280, guid: 88a06896a28ab483fa89eeffadaad453, type: 2}
+  lootChance:
+  - 0.1
+  - 0.1
+  - 0.1
 --- !u!114 &114877549874777046
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1687,6 +1822,21 @@ MonoBehaviour:
   announceHealth: 0
   ExplosionPrefab: {fileID: 1929691885755598, guid: 9ad62561940aefb48b47453e4cd03230,
     type: 2}
+--- !u!114 &114897858456200874
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1007807733349896}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0edc3c22ab57b47708424921d51123ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  announceDeath: 0
+  dropLoot: 0
+  loot: []
+  lootChance: []
 --- !u!114 &114934826007815546
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1703,6 +1853,27 @@ MonoBehaviour:
   announceHealth: 0
   ExplosionPrefab: {fileID: 1929691885755598, guid: 9ad62561940aefb48b47453e4cd03230,
     type: 2}
+--- !u!114 &114963022784415768
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1666306537085378}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0edc3c22ab57b47708424921d51123ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  announceDeath: 0
+  dropLoot: 1
+  loot:
+  - {fileID: 1275957643604192, guid: e0e2f0ec9bf6c45b3b56ae34ff226ac9, type: 2}
+  - {fileID: 1570120654186710, guid: 8222bccb2107a4e818224323326ec256, type: 2}
+  - {fileID: 1911493964852280, guid: 88a06896a28ab483fa89eeffadaad453, type: 2}
+  lootChance:
+  - 0.1
+  - 0.1
+  - 0.1
 --- !u!114 &114984002703228694
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1719,6 +1890,27 @@ MonoBehaviour:
   announceHealth: 0
   ExplosionPrefab: {fileID: 1929691885755598, guid: 9ad62561940aefb48b47453e4cd03230,
     type: 2}
+--- !u!114 &114985534301513602
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1749578212801140}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0edc3c22ab57b47708424921d51123ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  announceDeath: 0
+  dropLoot: 1
+  loot:
+  - {fileID: 1275957643604192, guid: e0e2f0ec9bf6c45b3b56ae34ff226ac9, type: 2}
+  - {fileID: 1570120654186710, guid: 8222bccb2107a4e818224323326ec256, type: 2}
+  - {fileID: 1911493964852280, guid: 88a06896a28ab483fa89eeffadaad453, type: 2}
+  lootChance:
+  - 0.1
+  - 0.1
+  - 0.1
 --- !u!135 &135004730008620658
 SphereCollider:
   m_ObjectHideFlags: 1
