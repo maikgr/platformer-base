@@ -24,6 +24,7 @@ GameObject:
   - component: {fileID: 114078514481897526}
   - component: {fileID: 212008823538118252}
   - component: {fileID: 114587445773791348}
+  - component: {fileID: 114415663312700234}
   m_Layer: 0
   m_Name: BulletFast
   m_TagString: Untagged
@@ -70,7 +71,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d5f785e7fa18ef40a080fa344271b04, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  target: {fileID: 0}
   speed: 9
+--- !u!114 &114415663312700234
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1957536845309962}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a519e0861d518413e843de4d87b5ebec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isPlayer: 0
 --- !u!114 &114587445773791348
 MonoBehaviour:
   m_ObjectHideFlags: 1
