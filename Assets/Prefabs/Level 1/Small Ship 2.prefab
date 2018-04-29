@@ -40,6 +40,7 @@ GameObject:
   - component: {fileID: 114607627284797942}
   - component: {fileID: 114047147360472314}
   - component: {fileID: 212782198508080798}
+  - component: {fileID: 114790999767129916}
   - component: {fileID: 82831604248192070}
   m_Layer: 0
   m_Name: Small Ship 2
@@ -220,6 +221,25 @@ MonoBehaviour:
   weaponDelay: 0
   pauseTime: 0
   numShots: 1
+--- !u!114 &114790999767129916
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1752793441926786}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0edc3c22ab57b47708424921d51123ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  announceDeath: 0
+  dropLoot: 1
+  loot:
+  - {fileID: 1911493964852280, guid: 88a06896a28ab483fa89eeffadaad453, type: 2}
+  - {fileID: 1170342241447756, guid: 17c3bfb9a543b41af861545ef73b0959, type: 2}
+  lootChance:
+  - 0.1
+  - 0.1
 --- !u!135 &135818924078569796
 SphereCollider:
   m_ObjectHideFlags: 1
