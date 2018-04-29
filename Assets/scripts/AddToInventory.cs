@@ -13,7 +13,7 @@ public class AddToInventory : MonoBehaviour {
 	}
 	void OnTriggerEnter(Collider other) {
 		if (other.tag == "Player") {
-			inventory.AddToCargo (Components.enumToString [itemName]);
+			inventory.AddToCargo (itemName);
 			Destroy (gameObject);
 		}
 	}
