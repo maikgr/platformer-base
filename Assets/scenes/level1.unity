@@ -4882,7 +4882,7 @@ Prefab:
     - target: {fileID: 114516153597588654, guid: 3c7a5a851644545a9a9d1fbf59d21681,
         type: 2}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114516153597588654, guid: 3c7a5a851644545a9a9d1fbf59d21681,
         type: 2}
@@ -4903,6 +4903,11 @@ Prefab:
         type: 2}
       propertyPath: playerBaseStats.minBulletSpread
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114789271860796190, guid: 3c7a5a851644545a9a9d1fbf59d21681,
+        type: 2}
+      propertyPath: playerBaseStats.baseMovementSpeed
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3c7a5a851644545a9a9d1fbf59d21681, type: 2}

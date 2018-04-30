@@ -76,7 +76,7 @@ public class Converter : MonoBehaviour {
 //			{Components.ItemName.BulletSize, 0},
 //			{Components.ItemName.BulletDamage, 0},
 //			{Components.ItemName.FiringRate, 10},
-//			{Components.ItemName.Pierce, 0},
+//			{Components.ItemName.Pierce, 1},
 //			{Components.ItemName.Spread, 7},
 //			{Components.ItemName.Health, 0},
 //			{Components.ItemName.MovementSpeed, 0},
@@ -148,6 +148,7 @@ public class Converter : MonoBehaviour {
 	}
 
 	public void	SetBulletPierce () {
+		playerBullet.GetComponent<DestroyByContact>().pierce = Mathf.Max (0, pierce);
 	}
 
 	public void	SetBulletSpread () {

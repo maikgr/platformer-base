@@ -5,11 +5,18 @@ using UnityEngine;
 public class DestroyByContact : MonoBehaviour {
 
 	public bool isPlayer;
+	public int pierce = 0;
 
 	void OnTriggerEnter (Collider other) 
 	{
-		if (IsOpponent(other.tag))
-			Destroy(gameObject);
+		if (IsOpponent (other.tag)) {
+			if (pierce == 0) 
+				Destroy (gameObject);
+			else {
+				pierce--;
+			}
+		}
+
 	}
 
 	bool IsOpponent(string tagName) {

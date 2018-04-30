@@ -26,7 +26,6 @@ GameObject:
   - component: {fileID: 114693819719702050}
   - component: {fileID: 212901787240633148}
   - component: {fileID: 114381137842929290}
-  - component: {fileID: 114897858456200874}
   - component: {fileID: 82636071747043838}
   m_Layer: 0
   m_Name: Small Ship 1
@@ -1822,21 +1821,6 @@ MonoBehaviour:
   announceHealth: 0
   ExplosionPrefab: {fileID: 1929691885755598, guid: 9ad62561940aefb48b47453e4cd03230,
     type: 2}
---- !u!114 &114897858456200874
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1007807733349896}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0edc3c22ab57b47708424921d51123ea, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  announceDeath: 0
-  dropLoot: 0
-  loot: []
-  lootChance: []
 --- !u!114 &114934826007815546
 MonoBehaviour:
   m_ObjectHideFlags: 1

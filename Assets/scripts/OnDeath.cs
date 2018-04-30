@@ -33,7 +33,7 @@ public class OnDeath : MonoBehaviour {
 	public void AnnounceDeath() {
 		if (gameObject.tag == "Player") {
 			Event.TriggerEvent (Event.GameEvent.PlayerDead);
-		} else if (gameObject.tag == "Boss") {
+		} else if (gameObject.tag == "Enemy") {
 			Event.TriggerEvent (Event.GameEvent.BossDead);
 		}
 	}

@@ -503,6 +503,7 @@ GameObject:
   - component: {fileID: 114678280373479446}
   - component: {fileID: 114793435500975820}
   - component: {fileID: 114231607832942136}
+  - component: {fileID: 114036738517398730}
   - component: {fileID: 212504060929364552}
   - component: {fileID: 114905104779335900}
   m_Layer: 0
@@ -665,7 +666,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1877356025352484}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 8.53, y: 0, z: 0}
+  m_LocalPosition: {x: 15, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4553499675992776}
@@ -1371,7 +1372,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   name: Top Half
-  shot: {fileID: 1114717310588044, guid: 6f4b11387eef64118be94841eb726e72, type: 2}
+  shot: {fileID: 1300755180383612, guid: 6dcaaabffab8d4ec7aa47c6dee7cc869, type: 2}
   shotSpawn:
   - {fileID: 4439848481401936}
   - {fileID: 4438428631520006}
@@ -1390,6 +1391,41 @@ MonoBehaviour:
   weaponDelay: 0.02
   pauseTime: 0
   numShots: 1
+--- !u!114 &114036738517398730
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1877356025352484}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0edc3c22ab57b47708424921d51123ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  announceDeath: 1
+  dropLoot: 1
+  loot:
+  - {fileID: 1877356025352484}
+  - {fileID: 1259860492144048, guid: 5be6154e49ff14a8cbce11c4fcba6e8e, type: 2}
+  - {fileID: 1481256056298548, guid: 51a505d4eb0cc441fb1aebc126afd9ab, type: 2}
+  - {fileID: 1856277657228328, guid: 1488f7a1be7c2406e9dd18ab2a180b39, type: 2}
+  - {fileID: 1629407175288176, guid: 1818e16dacaba4d57ad1562202bcc82e, type: 2}
+  - {fileID: 1608662855249880, guid: 6b53e5ef959a244a8b5a5f1f3bac4a06, type: 2}
+  - {fileID: 1911493964852280, guid: 88a06896a28ab483fa89eeffadaad453, type: 2}
+  - {fileID: 1570120654186710, guid: 8222bccb2107a4e818224323326ec256, type: 2}
+  - {fileID: 1275957643604192, guid: e0e2f0ec9bf6c45b3b56ae34ff226ac9, type: 2}
+  - {fileID: 1170342241447756, guid: 17c3bfb9a543b41af861545ef73b0959, type: 2}
+  lootChance:
+  - 0.2
+  - 0.2
+  - 0.2
+  - 0.2
+  - 0.2
+  - 0.2
+  - 0.2
+  - 0.2
+  - 0.2
+  - 0.2
 --- !u!114 &114038417726590904
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1489,7 +1525,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   name: Bottom Half
-  shot: {fileID: 1114717310588044, guid: 6f4b11387eef64118be94841eb726e72, type: 2}
+  shot: {fileID: 1300755180383612, guid: 6dcaaabffab8d4ec7aa47c6dee7cc869, type: 2}
   shotSpawn:
   - {fileID: 4565472210322392}
   - {fileID: 4815114895709704}
@@ -1569,7 +1605,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentHealth: 0
-  fullHealth: 40
+  fullHealth: 30
   announceHealth: 1
   ExplosionPrefab: {fileID: 1674642506496168, guid: 8e19b39147b437f479e64107480d6055,
     type: 2}
@@ -1625,7 +1661,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   name: 
-  shot: {fileID: 1114717310588044, guid: 6f4b11387eef64118be94841eb726e72, type: 2}
+  shot: {fileID: 1387323017291608, guid: 5c877a0465a2e4d32a3e9231ce309612, type: 2}
   shotSpawn:
   - {fileID: 4792723473678430}
   - {fileID: 4688972508232134}
