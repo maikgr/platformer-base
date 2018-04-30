@@ -21,7 +21,7 @@ public class Inventory : MonoBehaviour {
 	public void AddToCargo(Components.ItemName item) {
 		int result;
 		if (cargo.TryGetValue (item, out result)) {
-			result++;
+            cargo[item] = ++result;
 		} else {
 			cargo.Add (item, 1);
 		}
@@ -40,10 +40,11 @@ public class Inventory : MonoBehaviour {
     public void InstallComponent(Components.ItemName item) {
         int quantity;
         if(installedComponents.TryGetValue(item, out quantity)) {
-            quantity++;
+            installedComponents[item]++;
         } else {
             installedComponents.Add(item, 1);
         }
+        RemoveFromWorkshopInventory(item, 1);
     }
 
     public void UninstallComponent(Components.ItemName item) {
@@ -52,6 +53,7 @@ public class Inventory : MonoBehaviour {
         } else {
             installedComponents.Remove(item);
         }
+        AddToWorkshopInventory(item, 1);
     }
 
     public void AddToWorkshopInventory(Components.ItemName item, int quantity) {
