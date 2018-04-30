@@ -76,8 +76,8 @@ public class Converter : MonoBehaviour {
 //			{Components.ItemName.BulletSize, 0},
 //			{Components.ItemName.BulletDamage, 0},
 //			{Components.ItemName.FiringRate, 10},
-//			{Components.ItemName.Pierce, 1},
-//			{Components.ItemName.Spread, 7},
+//			{Components.ItemName.Pierce, 0},
+//			{Components.ItemName.Spread, 0},
 //			{Components.ItemName.Health, 0},
 //			{Components.ItemName.MovementSpeed, 0},
 //			{Components.ItemName.DamageOnContact, 5}
@@ -193,18 +193,18 @@ public class Converter : MonoBehaviour {
 	}
 
 	private void CalcFiringRate(int multiplier) {
-		firingRate -= (0.05f * multiplier);
+		firingRate -= (0.03f * multiplier);
 		bulletDamage -= 1 * multiplier;
 	}
 
 	private void CalcBulletPierce(int multiplier) {
 		pierce += 1 * multiplier;
-		firingRate += 0.025f * multiplier;
+		firingRate += 0.01f * multiplier;
 	}
 
 	private void CalcBulletSpread(int multiplier) {
 		spread += 1 * multiplier;
-		firingRate += 0.025f * multiplier;
+		firingRate += 0.01f * multiplier;
 	}
 
 	private void CalcHealth(int multiplier) {

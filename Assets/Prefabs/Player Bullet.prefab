@@ -99,7 +99,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlayer: 1
-  pierce: 1
+  pierce: 0
 --- !u!136 &136367808644587480
 CapsuleCollider:
   m_ObjectHideFlags: 1
