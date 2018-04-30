@@ -88,7 +88,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemName: 2
   componentName: Weapon - Damage
-  componentDescription: powerful weapon
+  componentDescription: Make your bullet deal more damage! Although it'll move a little
+    slower.
 --- !u!114 &114774930695403194
 MonoBehaviour:
   m_ObjectHideFlags: 1

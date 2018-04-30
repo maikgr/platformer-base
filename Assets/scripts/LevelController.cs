@@ -61,6 +61,7 @@ public class LevelController : MonoBehaviour {
 	}
 
 	void OnPlayerDie() {
+		inventory.AddCargoToWorkshopInventory ();
 		inventory.ClearCargo ();
 		loseText.SetActive (true);
 		Invoke ("LoadScene", 2);

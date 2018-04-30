@@ -99,7 +99,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemName: 1
   componentName: Weapon - Bullet Size
-  componentDescription: Description goes here
+  componentDescription: Increase the size of your bullet Increase the size of your
+    bullet, although it'll move a little slower.
 --- !u!114 &114774930695403194
 MonoBehaviour:
   m_ObjectHideFlags: 1

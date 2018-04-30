@@ -98,6 +98,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemName: 4
+  componentName: Weapon - Pierce
+  componentDescription: Allows your bullet to shoot through another enemy, but fire
+    at a slower rate.
 --- !u!114 &114774930695403194
 MonoBehaviour:
   m_ObjectHideFlags: 1

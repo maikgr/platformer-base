@@ -87,6 +87,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemName: 10
+  componentName: Body - Contact Damage
+  componentDescription: Deal damage when your ship touches enemies.
 --- !u!114 &114745049100877234
 MonoBehaviour:
   m_ObjectHideFlags: 1

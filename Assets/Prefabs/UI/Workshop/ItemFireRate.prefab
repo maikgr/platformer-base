@@ -99,7 +99,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemName: 3
   componentName: Weapon - Firing Rate
-  componentDescription: RATATATATATATA
+  componentDescription: Shoot bullets at a faster rate but they'll do a little less
+    damage.
 --- !u!114 &114774930695403194
 MonoBehaviour:
   m_ObjectHideFlags: 1

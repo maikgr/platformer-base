@@ -87,8 +87,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemName: 0
-  componentName: Item - Bullet Speed 1
-  componentDescription: Description goes here
+  componentName: Weapon - Bullet Speed
+  componentDescription: Increase the speed of your bullet and decrease its size.
 --- !u!114 &114774930695403194
 MonoBehaviour:
   m_ObjectHideFlags: 1

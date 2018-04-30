@@ -98,6 +98,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemName: 9
+  componentName: Body - Movement Speed
+  componentDescription: Increase the speed of your spaceship!
 --- !u!114 &114774930695403194
 MonoBehaviour:
   m_ObjectHideFlags: 1

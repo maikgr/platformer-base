@@ -87,6 +87,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemName: 5
+  componentName: Weapon - Bullet Spread
+  componentDescription: Shoot an additional bullet, but fire at a slower rate.
 --- !u!114 &114233987864800034
 MonoBehaviour:
   m_ObjectHideFlags: 1
