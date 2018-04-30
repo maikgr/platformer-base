@@ -75,9 +75,9 @@ public class Converter : MonoBehaviour {
 //			{Components.ItemName.BulletSpeed, 0},
 //			{Components.ItemName.BulletSize, 0},
 //			{Components.ItemName.BulletDamage, 0},
-//			{Components.ItemName.FiringRate, 6},
+//			{Components.ItemName.FiringRate, 10},
 //			{Components.ItemName.Pierce, 0},
-//			{Components.ItemName.Spread, 10},
+//			{Components.ItemName.Spread, 7},
 //			{Components.ItemName.Health, 0},
 //			{Components.ItemName.MovementSpeed, 0},
 //			{Components.ItemName.DamageOnContact, 5}

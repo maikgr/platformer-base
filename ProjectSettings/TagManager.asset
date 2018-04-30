@@ -12,6 +12,7 @@ TagManager:
   - Inventory
   - InventoryPanel
   - DescriptionPanel
+  - Music
   layers:
   - Default
   - TransparentFX

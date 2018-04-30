@@ -13,9 +13,8 @@ public class AddToInventory : MonoBehaviour {
 		inventory = GameObject.Find("Inventory").GetComponent<Inventory> ();
 		pickSfx = GetComponent<AudioSource>();
 	}
+
 	void OnTriggerEnter(Collider other) {
-
-
 		if (other.tag == "Player") {
 			pickSfx.Play();
 			inventory.AddToCargo (itemName);
