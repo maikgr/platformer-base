@@ -85,7 +85,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 0}
-  speed: 5
+  speed: 12
   direction: 1
 --- !u!114 &114322904839817706
 MonoBehaviour:
@@ -99,6 +99,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlayer: 0
+  pierce: 0
 --- !u!136 &136622752684359240
 CapsuleCollider:
   m_ObjectHideFlags: 1
