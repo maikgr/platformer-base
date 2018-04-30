@@ -23,6 +23,7 @@ GameObject:
   - component: {fileID: 135042571218889404}
   - component: {fileID: 114313834502860022}
   - component: {fileID: 114825611090828084}
+  - component: {fileID: 114393191770288216}
   - component: {fileID: 212056259771155042}
   - component: {fileID: 114263694443297550}
   m_Layer: 0
@@ -59,6 +60,7 @@ GameObject:
   - component: {fileID: 135073311691229498}
   - component: {fileID: 114219862899029082}
   - component: {fileID: 114639839191388840}
+  - component: {fileID: 114878463520635676}
   - component: {fileID: 212963051026845246}
   - component: {fileID: 114007574241479802}
   m_Layer: 0
@@ -110,6 +112,7 @@ GameObject:
   - component: {fileID: 135241912669995870}
   - component: {fileID: 114246768756115800}
   - component: {fileID: 114691755915233170}
+  - component: {fileID: 114633043328519468}
   - component: {fileID: 212007037068082904}
   - component: {fileID: 114309111042235996}
   m_Layer: 0
@@ -131,6 +134,7 @@ GameObject:
   - component: {fileID: 135687751427539790}
   - component: {fileID: 114567341072454222}
   - component: {fileID: 114437676238565988}
+  - component: {fileID: 114836298831412332}
   - component: {fileID: 212952990617935948}
   m_Layer: 0
   m_Name: Medium Ship (9)
@@ -181,6 +185,7 @@ GameObject:
   - component: {fileID: 135761634496381972}
   - component: {fileID: 114393007049111750}
   - component: {fileID: 114112324366417870}
+  - component: {fileID: 114852845321152714}
   - component: {fileID: 212521978588817318}
   - component: {fileID: 114585418278659308}
   m_Layer: 0
@@ -202,6 +207,7 @@ GameObject:
   - component: {fileID: 135345360761157592}
   - component: {fileID: 114046542331742672}
   - component: {fileID: 114000888206475860}
+  - component: {fileID: 114351269921679444}
   - component: {fileID: 212377582494378440}
   - component: {fileID: 114382687583320642}
   m_Layer: 0
@@ -238,6 +244,7 @@ GameObject:
   - component: {fileID: 135524972725415840}
   - component: {fileID: 114308307259421936}
   - component: {fileID: 114800320156195636}
+  - component: {fileID: 114844874265035644}
   - component: {fileID: 212443940277413490}
   m_Layer: 0
   m_Name: Medium Ship (8)
@@ -258,6 +265,7 @@ GameObject:
   - component: {fileID: 135720539781205298}
   - component: {fileID: 114741606017460126}
   - component: {fileID: 114472695905025808}
+  - component: {fileID: 114579401646337316}
   - component: {fileID: 212839995647530816}
   - component: {fileID: 114604110500338432}
   m_Layer: 0
@@ -309,6 +317,7 @@ GameObject:
   - component: {fileID: 135839249547793446}
   - component: {fileID: 114104408377434878}
   - component: {fileID: 114883439617492842}
+  - component: {fileID: 114251469115688632}
   - component: {fileID: 212029107664067262}
   - component: {fileID: 114885626276222476}
   m_Layer: 0
@@ -330,6 +339,7 @@ GameObject:
   - component: {fileID: 135903453922944356}
   - component: {fileID: 114343987307164544}
   - component: {fileID: 114347695288764114}
+  - component: {fileID: 114506348657545310}
   - component: {fileID: 212054648808103120}
   - component: {fileID: 114134837946048928}
   m_Layer: 0
@@ -839,7 +849,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentHealth: 0
-  fullHealth: 10
+  fullHealth: 2
   announceHealth: 0
   ExplosionPrefab: {fileID: 1929691885755598, guid: 9ad62561940aefb48b47453e4cd03230,
     type: 2}
@@ -904,7 +914,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentHealth: 0
-  fullHealth: 10
+  fullHealth: 2
   announceHealth: 0
   ExplosionPrefab: {fileID: 1929691885755598, guid: 9ad62561940aefb48b47453e4cd03230,
     type: 2}
@@ -957,6 +967,19 @@ MonoBehaviour:
   target: {fileID: 0}
   speed: 3
   direction: -1
+--- !u!114 &114251469115688632
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1858563006794294}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 455e9eadb5bb349cba88fa441d2bbfd0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 1
+  isPlayer: 0
 --- !u!114 &114263694443297550
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1053,10 +1076,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentHealth: 0
-  fullHealth: 10
+  fullHealth: 2
   announceHealth: 0
   ExplosionPrefab: {fileID: 1929691885755598, guid: 9ad62561940aefb48b47453e4cd03230,
     type: 2}
+--- !u!114 &114351269921679444
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1738713173328324}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 455e9eadb5bb349cba88fa441d2bbfd0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 1
+  isPlayer: 0
 --- !u!114 &114382687583320642
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1092,6 +1128,19 @@ MonoBehaviour:
   target: {fileID: 0}
   speed: 3
   direction: -1
+--- !u!114 &114393191770288216
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1034927197113212}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 455e9eadb5bb349cba88fa441d2bbfd0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 1
+  isPlayer: 0
 --- !u!114 &114437676238565988
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1104,7 +1153,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentHealth: 0
-  fullHealth: 10
+  fullHealth: 2
   announceHealth: 0
   ExplosionPrefab: {fileID: 1929691885755598, guid: 9ad62561940aefb48b47453e4cd03230,
     type: 2}
@@ -1120,10 +1169,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentHealth: 0
-  fullHealth: 10
+  fullHealth: 2
   announceHealth: 0
   ExplosionPrefab: {fileID: 1929691885755598, guid: 9ad62561940aefb48b47453e4cd03230,
     type: 2}
+--- !u!114 &114506348657545310
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1873942414117974}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 455e9eadb5bb349cba88fa441d2bbfd0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 1
+  isPlayer: 0
 --- !u!114 &114567341072454222
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1138,6 +1200,19 @@ MonoBehaviour:
   target: {fileID: 0}
   speed: 3
   direction: -1
+--- !u!114 &114579401646337316
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1755564538063426}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 455e9eadb5bb349cba88fa441d2bbfd0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 1
+  isPlayer: 0
 --- !u!114 &114585418278659308
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1180,6 +1255,19 @@ MonoBehaviour:
   - 0.1
   - 0.1
   - 0.15
+--- !u!114 &114633043328519468
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1382927036965686}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 455e9eadb5bb349cba88fa441d2bbfd0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 1
+  isPlayer: 0
 --- !u!114 &114639839191388840
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1192,7 +1280,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentHealth: 0
-  fullHealth: 10
+  fullHealth: 2
   announceHealth: 0
   ExplosionPrefab: {fileID: 1929691885755598, guid: 9ad62561940aefb48b47453e4cd03230,
     type: 2}
@@ -1208,7 +1296,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentHealth: 0
-  fullHealth: 10
+  fullHealth: 2
   announceHealth: 0
   ExplosionPrefab: {fileID: 1929691885755598, guid: 9ad62561940aefb48b47453e4cd03230,
     type: 2}
@@ -1238,7 +1326,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentHealth: 0
-  fullHealth: 10
+  fullHealth: 2
   announceHealth: 0
   ExplosionPrefab: {fileID: 1929691885755598, guid: 9ad62561940aefb48b47453e4cd03230,
     type: 2}
@@ -1254,10 +1342,62 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentHealth: 0
-  fullHealth: 10
+  fullHealth: 2
   announceHealth: 0
   ExplosionPrefab: {fileID: 1929691885755598, guid: 9ad62561940aefb48b47453e4cd03230,
     type: 2}
+--- !u!114 &114836298831412332
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1424064009236308}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 455e9eadb5bb349cba88fa441d2bbfd0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 1
+  isPlayer: 0
+--- !u!114 &114844874265035644
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1753245739117938}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 455e9eadb5bb349cba88fa441d2bbfd0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 1
+  isPlayer: 0
+--- !u!114 &114852845321152714
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1655697269353574}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 455e9eadb5bb349cba88fa441d2bbfd0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 1
+  isPlayer: 0
+--- !u!114 &114878463520635676
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1115408421036358}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 455e9eadb5bb349cba88fa441d2bbfd0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 1
+  isPlayer: 0
 --- !u!114 &114883439617492842
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1270,7 +1410,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentHealth: 0
-  fullHealth: 10
+  fullHealth: 2
   announceHealth: 0
   ExplosionPrefab: {fileID: 1929691885755598, guid: 9ad62561940aefb48b47453e4cd03230,
     type: 2}

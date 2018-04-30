@@ -53,6 +53,7 @@ GameObject:
   - component: {fileID: 135260333448525412}
   - component: {fileID: 114057368661628296}
   - component: {fileID: 114136138862019582}
+  - component: {fileID: 114379811274270156}
   - component: {fileID: 114201567303066036}
   - component: {fileID: 212979938815817128}
   - component: {fileID: 114473788278224070}
@@ -243,6 +244,7 @@ GameObject:
   - component: {fileID: 135171258749891182}
   - component: {fileID: 114843723607193044}
   - component: {fileID: 114979536761216534}
+  - component: {fileID: 114425454833851756}
   - component: {fileID: 114165617455686206}
   - component: {fileID: 212784935834791566}
   - component: {fileID: 114034279638579166}
@@ -1399,6 +1401,19 @@ MonoBehaviour:
   lootChance:
   - 0.1
   - 0.1
+--- !u!114 &114379811274270156
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1158615326001818}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 455e9eadb5bb349cba88fa441d2bbfd0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 1
+  isPlayer: 0
 --- !u!114 &114391020386633318
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1453,6 +1468,19 @@ MonoBehaviour:
   target: {fileID: 0}
   speed: 5
   direction: -1
+--- !u!114 &114425454833851756
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1704323313872480}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 455e9eadb5bb349cba88fa441d2bbfd0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 1
+  isPlayer: 0
 --- !u!114 &114438261062818652
 MonoBehaviour:
   m_ObjectHideFlags: 1
