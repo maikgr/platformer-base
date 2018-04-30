@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311947, g: 0.38074005, b: 0.35872722, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311992, g: 0.38074034, b: 0.35872713, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -5349,6 +5349,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inventoryPanel: {fileID: 2060198878}
+  bodyPanel: {fileID: 1973815470}
+  leftWeaponPanel: {fileID: 1728824674}
+  rightWeaponPanel: {fileID: 1700759042}
   iconMap:
   - itemName: 1
     prefab: {fileID: 1729969314578028, guid: 48620cd31642a6343ab3ec187b3a6cad, type: 2}
