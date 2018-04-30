@@ -85,7 +85,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 0}
-  speed: 7
+  speed: 13
   direction: 1
 --- !u!114 &114806473852016244
 MonoBehaviour:

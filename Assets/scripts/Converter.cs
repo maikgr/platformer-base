@@ -199,12 +199,12 @@ public class Converter : MonoBehaviour {
 
 	private void CalcBulletPierce(int multiplier) {
 		pierce += 1 * multiplier;
-		firingRate += 0.01f * multiplier;
+		firingRate += 0.02f * multiplier;
 	}
 
 	private void CalcBulletSpread(int multiplier) {
 		spread += 1 * multiplier;
-		firingRate += 0.01f * multiplier;
+		firingRate += 0.03f * multiplier;
 	}
 
 	private void CalcHealth(int multiplier) {

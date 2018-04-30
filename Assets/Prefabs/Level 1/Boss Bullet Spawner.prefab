@@ -128,11 +128,11 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 4a483a9e1c2157a44864cfe3feaf91f2, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 0.15
   m_Pitch: 1
   Loop: 0
-  Mute: 0
+  Mute: 1
   Spatialize: 0
   SpatializePostEffects: 0
   Priority: 128
@@ -210,12 +210,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   name: 
-  shot: {fileID: 1114717310588044, guid: 6f4b11387eef64118be94841eb726e72, type: 2}
+  shot: {fileID: 1957536845309962, guid: 9ac6341a09773434194d372df7e305ad, type: 2}
   shotSpawn:
   - {fileID: 4352457799604150}
   - {fileID: 4563655417251728}
   initialDelay: 1
-  fireRate: 0.05
+  fireRate: 0.025
   weaponDelay: 0
   pauseTime: 0
   numShots: 1
