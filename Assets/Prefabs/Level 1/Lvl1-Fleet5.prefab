@@ -424,7 +424,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   announceDeath: 0
-  dropLoot: 0
+  dropLoot: 1
   loot:
   - {fileID: 1481256056298548, guid: 51a505d4eb0cc441fb1aebc126afd9ab, type: 2}
   lootChance:
@@ -504,7 +504,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   announceDeath: 0
-  dropLoot: 0
+  dropLoot: 1
   loot:
   - {fileID: 1481256056298548, guid: 51a505d4eb0cc441fb1aebc126afd9ab, type: 2}
   lootChance:

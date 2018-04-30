@@ -136,6 +136,7 @@ GameObject:
   - component: {fileID: 114437676238565988}
   - component: {fileID: 114836298831412332}
   - component: {fileID: 212952990617935948}
+  - component: {fileID: 114708757683862910}
   m_Layer: 0
   m_Name: Medium Ship (9)
   m_TagString: Enemy
@@ -245,6 +246,7 @@ GameObject:
   - component: {fileID: 114308307259421936}
   - component: {fileID: 114800320156195636}
   - component: {fileID: 114844874265035644}
+  - component: {fileID: 114299136360408246}
   - component: {fileID: 212443940277413490}
   m_Layer: 0
   m_Name: Medium Ship (8)
@@ -1001,6 +1003,23 @@ MonoBehaviour:
   - 0.1
   - 0.1
   - 0.15
+--- !u!114 &114299136360408246
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1753245739117938}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0edc3c22ab57b47708424921d51123ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  announceDeath: 0
+  dropLoot: 0
+  loot:
+  - {fileID: 1170342241447756, guid: 17c3bfb9a543b41af861545ef73b0959, type: 2}
+  lootChance:
+  - 0.2
 --- !u!114 &114308307259421936
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1300,6 +1319,23 @@ MonoBehaviour:
   announceHealth: 0
   ExplosionPrefab: {fileID: 1929691885755598, guid: 9ad62561940aefb48b47453e4cd03230,
     type: 2}
+--- !u!114 &114708757683862910
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1424064009236308}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0edc3c22ab57b47708424921d51123ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  announceDeath: 0
+  dropLoot: 1
+  loot:
+  - {fileID: 1481256056298548, guid: 51a505d4eb0cc441fb1aebc126afd9ab, type: 2}
+  lootChance:
+  - 0.1
 --- !u!114 &114741606017460126
 MonoBehaviour:
   m_ObjectHideFlags: 1
