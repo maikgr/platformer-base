@@ -1539,7 +1539,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 455e9eadb5bb349cba88fa441d2bbfd0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 10
+  damage: 1
   isPlayer: 0
 --- !u!114 &114756334162816270
 MonoBehaviour:
@@ -1569,7 +1569,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentHealth: 0
-  fullHealth: 80
+  fullHealth: 40
   announceHealth: 1
   ExplosionPrefab: {fileID: 1674642506496168, guid: 8e19b39147b437f479e64107480d6055,
     type: 2}

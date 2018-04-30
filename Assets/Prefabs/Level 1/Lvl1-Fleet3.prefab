@@ -41,6 +41,7 @@ GameObject:
   - component: {fileID: 114260331105873810}
   - component: {fileID: 212501630542606920}
   - component: {fileID: 114565299452018754}
+  - component: {fileID: 114321878690482110}
   - component: {fileID: 82674971372818710}
   m_Layer: 0
   m_Name: Small Ship 2
@@ -94,6 +95,7 @@ GameObject:
   - component: {fileID: 114090915032548724}
   - component: {fileID: 212434503506458806}
   - component: {fileID: 114753363348370446}
+  - component: {fileID: 114774599889662906}
   - component: {fileID: 82120427261073094}
   m_Layer: 0
   m_Name: Small Ship 2 (1)
@@ -393,7 +395,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentHealth: 0
-  fullHealth: 3
+  fullHealth: 1
   announceHealth: 0
   ExplosionPrefab: {fileID: 1929691885755598, guid: 9ad62561940aefb48b47453e4cd03230,
     type: 2}
@@ -409,7 +411,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentHealth: 0
-  fullHealth: 3
+  fullHealth: 1
   announceHealth: 0
   ExplosionPrefab: {fileID: 1929691885755598, guid: 9ad62561940aefb48b47453e4cd03230,
     type: 2}
@@ -433,6 +435,19 @@ MonoBehaviour:
   weaponDelay: 0
   pauseTime: 4
   numShots: 3
+--- !u!114 &114321878690482110
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1602504414856692}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 455e9eadb5bb349cba88fa441d2bbfd0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 1
+  isPlayer: 0
 --- !u!114 &114565299452018754
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -485,6 +500,19 @@ MonoBehaviour:
   lootChance:
   - 0.1
   - 0.1
+--- !u!114 &114774599889662906
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1913769678114224}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 455e9eadb5bb349cba88fa441d2bbfd0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 1
+  isPlayer: 0
 --- !u!114 &114912829587488514
 MonoBehaviour:
   m_ObjectHideFlags: 1
