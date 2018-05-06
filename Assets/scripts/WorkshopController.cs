@@ -78,9 +78,11 @@ public class WorkshopController : MonoBehaviour {
                     Instantiate(itemPrefabs[item.Key], weaponSlot);
                 }
             } else if (availableBody.Contains(item.Key)) {
-                Transform bodySlot = bodyPanel.transform.GetChild(bodyCounter).transform;
-                Instantiate(itemPrefabs[item.Key], bodySlot);
-                bodyCounter++;
+                for (int i = 0; i < item.Value; ++i) {
+                    Transform bodySlot = bodyPanel.transform.GetChild(bodyCounter).transform;
+                    Instantiate(itemPrefabs[item.Key], bodySlot);
+                    bodyCounter++;
+                }
             }
         }
     }

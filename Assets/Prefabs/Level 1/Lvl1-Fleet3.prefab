@@ -461,12 +461,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   announceDeath: 0
   dropLoot: 1
-  loot:
-  - {fileID: 1275957643604192, guid: e0e2f0ec9bf6c45b3b56ae34ff226ac9, type: 2}
-  - {fileID: 1856277657228328, guid: 1488f7a1be7c2406e9dd18ab2a180b39, type: 2}
-  lootChance:
-  - 0.1
-  - 0.1
+  loots:
+  - item: 3
+    chance: 0.2
+  - item: 4
+    chance: 0.1
+  - item: 0
+    chance: 0.2
 --- !u!114 &114603281420856522
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -494,12 +495,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   announceDeath: 0
   dropLoot: 1
-  loot:
-  - {fileID: 1275957643604192, guid: e0e2f0ec9bf6c45b3b56ae34ff226ac9, type: 2}
-  - {fileID: 1856277657228328, guid: 1488f7a1be7c2406e9dd18ab2a180b39, type: 2}
-  lootChance:
-  - 0.1
-  - 0.1
+  loots:
+  - item: 3
+    chance: 0.2
+  - item: 4
+    chance: 0.1
+  - item: 0
+    chance: 0.2
 --- !u!114 &114774599889662906
 MonoBehaviour:
   m_ObjectHideFlags: 1

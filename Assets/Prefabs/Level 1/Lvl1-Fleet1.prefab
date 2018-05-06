@@ -1480,14 +1480,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   announceDeath: 0
   dropLoot: 1
-  loot:
-  - {fileID: 1275957643604192, guid: e0e2f0ec9bf6c45b3b56ae34ff226ac9, type: 2}
-  - {fileID: 1570120654186710, guid: 8222bccb2107a4e818224323326ec256, type: 2}
-  - {fileID: 1911493964852280, guid: 88a06896a28ab483fa89eeffadaad453, type: 2}
-  lootChance:
-  - 0.1
-  - 0.1
-  - 0.1
+  loots:
+  - item: 2
+    chance: 0.2
+  - item: 1
+    chance: 0.1
+  - item: 9
+    chance: 0.1
 --- !u!114 &114398909951991528
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1515,14 +1514,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   announceDeath: 0
   dropLoot: 1
-  loot:
-  - {fileID: 1275957643604192, guid: e0e2f0ec9bf6c45b3b56ae34ff226ac9, type: 2}
-  - {fileID: 1570120654186710, guid: 8222bccb2107a4e818224323326ec256, type: 2}
-  - {fileID: 1911493964852280, guid: 88a06896a28ab483fa89eeffadaad453, type: 2}
-  lootChance:
-  - 0.1
-  - 0.1
-  - 0.1
+  loots:
+  - item: 2
+    chance: 0.2
+  - item: 1
+    chance: 0.1
+  - item: 9
+    chance: 0.1
 --- !u!114 &114521987725736110
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1552,14 +1550,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   announceDeath: 0
   dropLoot: 1
-  loot:
-  - {fileID: 1275957643604192, guid: e0e2f0ec9bf6c45b3b56ae34ff226ac9, type: 2}
-  - {fileID: 1570120654186710, guid: 8222bccb2107a4e818224323326ec256, type: 2}
-  - {fileID: 1911493964852280, guid: 88a06896a28ab483fa89eeffadaad453, type: 2}
-  lootChance:
-  - 0.1
-  - 0.1
-  - 0.1
+  loots:
+  - item: 2
+    chance: 0.2
+  - item: 1
+    chance: 0.1
+  - item: 9
+    chance: 0.1
 --- !u!114 &114557108915496430
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1643,14 +1640,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   announceDeath: 0
   dropLoot: 1
-  loot:
-  - {fileID: 1275957643604192, guid: e0e2f0ec9bf6c45b3b56ae34ff226ac9, type: 2}
-  - {fileID: 1570120654186710, guid: 8222bccb2107a4e818224323326ec256, type: 2}
-  - {fileID: 1911493964852280, guid: 88a06896a28ab483fa89eeffadaad453, type: 2}
-  lootChance:
-  - 0.1
-  - 0.1
-  - 0.1
+  loots:
+  - item: 2
+    chance: 0.2
+  - item: 1
+    chance: 0.1
+  - item: 9
+    chance: 0.1
 --- !u!114 &114691249665646164
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1664,14 +1660,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   announceDeath: 0
   dropLoot: 1
-  loot:
-  - {fileID: 1275957643604192, guid: e0e2f0ec9bf6c45b3b56ae34ff226ac9, type: 2}
-  - {fileID: 1570120654186710, guid: 8222bccb2107a4e818224323326ec256, type: 2}
-  - {fileID: 1911493964852280, guid: 88a06896a28ab483fa89eeffadaad453, type: 2}
-  lootChance:
-  - 0.1
-  - 0.1
-  - 0.1
+  loots:
+  - item: 2
+    chance: 0.2
+  - item: 1
+    chance: 0.1
+  - item: 9
+    chance: 0.1
 --- !u!114 &114693819719702050
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1777,14 +1772,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   announceDeath: 0
   dropLoot: 1
-  loot:
-  - {fileID: 1275957643604192, guid: e0e2f0ec9bf6c45b3b56ae34ff226ac9, type: 2}
-  - {fileID: 1570120654186710, guid: 8222bccb2107a4e818224323326ec256, type: 2}
-  - {fileID: 1911493964852280, guid: 88a06896a28ab483fa89eeffadaad453, type: 2}
-  lootChance:
-  - 0.1
-  - 0.1
-  - 0.1
+  loots:
+  - item: 2
+    chance: 0.2
+  - item: 1
+    chance: 0.1
+  - item: 9
+    chance: 0.1
 --- !u!114 &114877549874777046
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1850,14 +1844,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   announceDeath: 0
   dropLoot: 1
-  loot:
-  - {fileID: 1275957643604192, guid: e0e2f0ec9bf6c45b3b56ae34ff226ac9, type: 2}
-  - {fileID: 1570120654186710, guid: 8222bccb2107a4e818224323326ec256, type: 2}
-  - {fileID: 1911493964852280, guid: 88a06896a28ab483fa89eeffadaad453, type: 2}
-  lootChance:
-  - 0.1
-  - 0.1
-  - 0.1
+  loots:
+  - item: 2
+    chance: 0.2
+  - item: 1
+    chance: 0.1
+  - item: 9
+    chance: 0.1
 --- !u!114 &114984002703228694
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1887,14 +1880,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   announceDeath: 0
   dropLoot: 1
-  loot:
-  - {fileID: 1275957643604192, guid: e0e2f0ec9bf6c45b3b56ae34ff226ac9, type: 2}
-  - {fileID: 1570120654186710, guid: 8222bccb2107a4e818224323326ec256, type: 2}
-  - {fileID: 1911493964852280, guid: 88a06896a28ab483fa89eeffadaad453, type: 2}
-  lootChance:
-  - 0.1
-  - 0.1
-  - 0.1
+  loots:
+  - item: 2
+    chance: 0.2
+  - item: 1
+    chance: 0.1
+  - item: 9
+    chance: 0.1
 --- !u!135 &135004730008620658
 SphereCollider:
   m_ObjectHideFlags: 1

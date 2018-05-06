@@ -8,19 +8,23 @@ public class AddToInventory : MonoBehaviour {
 
 	private AudioSource pickSfx;
 	private Inventory inventory;
+    private LevelUIController levelUi;
 
 	void Start() {
 		inventory = GameObject.Find("Inventory").GetComponent<Inventory> ();
+        levelUi = FindObjectOfType<LevelUIController>();
 		pickSfx = GetComponent<AudioSource>();
 	}
 
 	void OnTriggerEnter(Collider other) {
 		if (other.tag == "Player") {
 			pickSfx.Play();
+            foreach(SpriteRenderer renderer in transform.GetComponentsInChildren<SpriteRenderer>()) {
+                renderer.enabled = false;
+            }
 			inventory.AddToCargo (itemName);
-			Destroy (gameObject);
+            levelUi.UpdateLoot(itemName);
+			Destroy (gameObject, pickSfx.clip.length);
 		}
 	}
-
-
 }

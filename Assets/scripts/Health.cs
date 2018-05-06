@@ -10,6 +10,7 @@ public class Health : MonoBehaviour {
     public GameObject ExplosionPrefab;
 
 	private HealthEvent healthEvent;
+    private LevelUIController levelUi;
 
 	void Start() {
 		Init ();
@@ -17,6 +18,9 @@ public class Health : MonoBehaviour {
 		if (announceHealth) {
 			healthEvent = GetComponent<HealthEvent> ();
 		}
+        if (transform.GetComponent<PlayerController>() != null) {
+            levelUi = FindObjectOfType<LevelUIController>();
+        }
 	}
 
 	protected virtual void Init() {
@@ -37,11 +41,13 @@ public class Health : MonoBehaviour {
 
 	public void DealDamage(int damage) {
 		currentHealth -= damage;
-	}
+        UpdateHealthBar();
+    }
 
 	public void Heal(int amount) {
 		currentHealth += amount;
-	}
+        UpdateHealthBar();
+    }
 
 	public int GetHealth() {
 		return currentHealth;
@@ -54,5 +60,12 @@ public class Health : MonoBehaviour {
 	public void SetFullHealth(int hp) {
 		fullHealth = hp;
 		Init ();
-	}
+        UpdateHealthBar();
+    }
+
+    public void UpdateHealthBar() {
+        if(levelUi != null) {
+            levelUi.UpdateHealth(currentHealth);
+        }
+    }
 }

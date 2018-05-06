@@ -234,12 +234,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   announceDeath: 0
   dropLoot: 1
-  loot:
-  - {fileID: 1911493964852280, guid: 88a06896a28ab483fa89eeffadaad453, type: 2}
-  - {fileID: 1170342241447756, guid: 17c3bfb9a543b41af861545ef73b0959, type: 2}
-  lootChance:
-  - 0.1
-  - 0.1
+  loots:
+  - item: 3
+    chance: 0.2
+  - item: 4
+    chance: 0.1
+  - item: 0
+    chance: 0.2
 --- !u!135 &135818924078569796
 SphereCollider:
   m_ObjectHideFlags: 1
